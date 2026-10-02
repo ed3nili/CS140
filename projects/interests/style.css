@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(25, 34, 107);
+}
+
+header {
+color: rgb(214, 78, 24);
+}
+
+nav {color: aliceblue;}
+main {
+   color:  rgb(161, 219, 178);
+}
+
+footer {
+    color: #;
+}
+
+span {
+    color: rgb(255, 166, 0);
+}
+
+#maintitle {
+    color: rgb(82, 170, 204);
+}
+
+.bigger {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.maincolor {
+      color: rgb(255, 166, 0);
+}
