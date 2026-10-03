@@ -1,6 +1,7 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(25, 34, 107);
+    font-size: larger;
 }
 
 header {
@@ -12,16 +13,13 @@ main {
    color:  rgb(161, 219, 178);
 }
 
-footer {
-    color: #;
-}
-
 span {
-    color: rgb(255, 166, 0);
+    color: rgb(214, 78, 24);
+    font-style: oblique;
 }
 
 #maintitle {
-    color: rgb(82, 170, 204);
+    color: rgb(47, 122, 151);
 }
 
 .bigger {
@@ -31,4 +29,8 @@ span {
 
 .maincolor {
       color: rgb(255, 166, 0);
+}
+
+footer {
+    color: aliceblue;
 }
