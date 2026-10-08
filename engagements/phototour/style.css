@@ -1,0 +1,20 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:whitesmoke;
+    background-color: rgb(205, 160, 101);
+        background-image: url(background.jpg);
+}
+
+.list {
+    list-style-image: flower;
+}
+header {
+    background-image: url(flower.png);
+}
+nav a {
+    color: rgb(148, 71, 20);
+}
+
+.current {
+    color: grey;
+}
