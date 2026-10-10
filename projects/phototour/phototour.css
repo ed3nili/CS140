@@ -6,12 +6,12 @@ body {
     background: url(greybackground.jpg)  rgb(201, 198, 198);
 }
 
-.list {
-    list-style-image: url(flower.png);
+.mainpage {
+  background:  url(flag.png)  no-repeat  right;
 }
 
-header {
-    background:  url(flag.png)  no-repeat  right;
+.list {
+    list-style-image: url(flower.png);
 }
 
 nav a {
