@@ -1,0 +1,35 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.templefig {
+    border: 5px solid rgb(202, 176, 226);
+    width: 300px;
+    overflow: hidden;     
+}
+
+#floatfig {
+float: right;
+}
+
+#relative {
+position: relative; top: 20px; left: 40px;
+}
+
+#absolute {
+position: absolute;
+top: 0; right: 0;
+}
+
+#fixed {
+    position: absolute; bottom: 0px ; right:0px;
+}
+
+.templefig.img {
+    width: 100%;
+}
+
+.enforcer {
+    clear: both;
+}
+
