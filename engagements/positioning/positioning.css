@@ -22,7 +22,7 @@ top: 0; right: 0;
 }
 
 #fixed {
-    position: absolute; bottom: 0px ; right:0px;
+    position: fixed; bottom: 0px ; right:0px;
 }
 
 .templefig.img {
