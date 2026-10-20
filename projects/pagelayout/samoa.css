@@ -1,0 +1,64 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(19, 19, 124); background-color: rgb(240, 235, 228);
+}
+
+body header {
+text-align: center; text-transform: uppercase;
+}
+
+#shadowfig {
+    text-shadow: 0 0 10px rgb(18, 71, 187);
+}
+
+nav {
+    line-height: 1.5%;
+    text-align: center;
+    font-size: larger;
+width: 50%;
+margin: 30px auto;
+padding: 10px 10px 10px 8px;
+}
+
+body main {
+    font-family: 'Courier New', Courier, monospace;
+    color: red; font-weight: 700; font-size: medium;
+}
+
+.samoafig {
+    border: 3px solid rgb(19, 19,124);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#floatfig {
+    float: right; 
+}
+
+img {
+    width: fit-content;
+}
+
+.mainpage {
+    background: url(flagsamoa.jpg) no-repeat right; background-origin: padding-box; background-clip: border-box; background-size: contain;
+}
+
+nav a {
+    color: white; display:inline-block; background-color: rgb(19, 19, 124); padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: red ; color:white
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: thin solid black;
+}
+
+.end {
+    clear: both;
+}
