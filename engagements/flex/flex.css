@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: 2px solid rgb(255, 39, 172); 
+    padding: 5px;
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(154, 111, 167);
+    color: white;
+   /*border-bottom: thin solid white;*/
+}
+
+.parent {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+/*flex-flow: row wrap; comment - ignored*/
+gap: 10px;
+}
