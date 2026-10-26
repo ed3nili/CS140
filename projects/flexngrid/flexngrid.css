@@ -1,0 +1,61 @@
+body {
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+header {
+    background-color: rgb(249, 177, 219);
+    color: rgb(140, 98, 59);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(249, 177, 219);
+    color: rgb(140, 98, 59);
+}
+
+.parent {
+display: flex;
+}
+
+
+aside {
+display: flex;
+gap: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     "header header header"
+     "navigation navigation navigation"
+     "aside1 main aside2"
+     "footer footer footer";
+}
+
+header {grid-area: header;}
+nav {grid-area: navigation;}
+.aside1 {grid-area: aside1;}
+.aside2 {grid-area: aside2;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+.columnA { grid-area: main2; }
+.columnB { grid-area: header2; }
+.columnC { grid-area: header1; }
+.columnD { grid-area: main3; }
+.columnE { grid-area: main1; }
+.columnF { grid-area: header3; }
+
+
+
+.column {
+    background-color: rgb(198, 204, 255);
+}
