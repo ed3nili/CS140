@@ -26,6 +26,14 @@ nav a {
     padding: 5px 20px;
     background-color: rgb(249, 177, 219);
     color: rgb(140, 98, 59);
+    text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: 
+underline;
+background-color: white;
+color: rgb(249, 177, 219);
 }
 
 .mainrow {
@@ -40,8 +48,14 @@ main {
     width: 75%;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .card {
-    border: 5px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     width: 250px;
     overflow: hidden;
@@ -63,4 +77,41 @@ main {
     margin-bottom: 0px 10px 5px auto;
     border-radius: 5px;
     color: aliceblue;
+}
+
+@media ONLY screen AND (max-width:680px) {
+    .mainrow {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .siderbar {
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: 1px solid white;
+        padding: 15px 10px;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
