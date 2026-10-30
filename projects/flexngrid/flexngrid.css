@@ -47,12 +47,7 @@ nav {grid-area: navigation;}
 main {grid-area: main;}
 footer {grid-area: footer;}
 
-.columnA { grid-area: main2; }
-.columnB { grid-area: header2; }
-.columnC { grid-area: header1; }
-.columnD { grid-area: main3; }
-.columnE { grid-area: main1; }
-.columnF { grid-area: header3; }
+
 
 
 
