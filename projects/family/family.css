@@ -1,0 +1,144 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    color: rgb(69, 84, 78);
+    background-color: rgb(215, 241, 199);
+}
+
+header {
+    background-color: rgb(69, 84, 78);
+    color: aliceblue;
+    font-style: italic;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+html {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(131, 217, 184);
+}
+
+nav a {
+    display: block;
+    padding: 5px 20px;
+    background-color: rgb(158, 242, 181);
+    color: rgb(69, 84, 78);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(69, 84, 78);
+    color: rgb(158, 242, 181);
+}
+
+.mainrow {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%; 
+}
+
+.familyfig {
+    border: 3px solid rgb(13, 73, 36);
+    width:75%;
+    overflow: hidden;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+ul {
+    clear: both;
+}
+
+main {
+    width: 75%;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.card {
+    flex: auto;
+    border: 3px solid rgb(8, 129, 38);
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgb(51, 51, 59)
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    margin: 0
+}
+
+.card a {
+    display:block;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:680px) {
+    .mainrow {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: 1px solid white;
+        padding: 15px 10px;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
