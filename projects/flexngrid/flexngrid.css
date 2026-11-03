@@ -1,56 +1,80 @@
 body {
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    color: rgb(255, 4, 100);
+    background-color: rgb(254, 251, 190);
 }
 
 header {
-    background-color: rgb(249, 177, 219);
-    color: rgb(140, 98, 59);
+    background-color: rgb(253, 190, 225);
+    color:  rgb(255, 4, 100);
+    font-style: italic;
+}
+
+header h1 {
+    margin: 0;
     text-align: center;
+}
+
+html {
+    margin: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    background-color: rgb(253, 190, 225);
 }
 
 nav a {
     display: block;
-    padding: 5px 10px;
-    background-color: rgb(249, 177, 219);
-    color: rgb(140, 98, 59);
+    padding: 5px 20px;
+    background-color: rgb(255, 4, 100);
+    color: white;
+    text-decoration: none;
 }
 
-.parent {
-display: flex;
+.mainrow {
+    display: flex;
 }
 
-
-aside {
-display: flex;
-gap: 10px;
+.sidebar {
+    width: 25%; 
 }
 
-.wrapper {
+main {
+    width: 75%;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.card {
+    flex: auto;
+    border: 3px solid rgb(181, 0, 226);
+    border-radius: 10px;
+    width: 30%;
+    overflow: auto;
+    box-shadow: 3px 3px 5px rgb(202, 202, 235);
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-     "header header header"
-     "navigation navigation navigation"
-     "aside1 main aside2"
-     "footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
 }
-
-header {grid-area: header;}
-nav {grid-area: navigation;}
-.aside1 {grid-area: aside1;}
-.aside2 {grid-area: aside2;}
-main {grid-area: main;}
-footer {grid-area: footer;}
-
-
-
-
-
-.column {
-    background-color: rgb(198, 204, 255);
+footer a {
+    display: block;
 }
