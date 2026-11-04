@@ -4,139 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edens Web Design Site</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
-    <header>
+    <main>
+        <div class="tablediv">
+                       <header>
         <h1>My Class Schedule</h1>
     </header>
-    <table border="1">
+    <table id="schedule">
         <caption>Eden's University Class Schedule</caption>
         <thead>
             <tr>
-                <th colspan="6">FALL 2026</th>
+                <th scope="col">Department</th>
+                 <th>Course Number</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Time</th>
+                <th>Credits</th>
             </tr>
-            <tr><th scope="col">Department</th></tr>
-            <th>Course Number</th>
-            <th>Title</th>
-            <th>Location</th>
-            <th>Time</th>
-            <th>Credits</th>
-        </tr>
         </thead>
         <tbody>
         <tr>
-        <th scope="row">Pacific Island Studies</th>
-        <td>105</td>
-        <td>INTRO TO PACIFIC</td>
-        <td>LIB 258</td>
-        <td>8:00AM - 8:50AM</td>
-        <td>3</td>
+            <th colspan="6">FALL 2026</th>
         </tr>
         <tr>
-        <td>Education</td>
-        <td>212-02</td>
-        <td>FOUNDATIONS OF EDUCATION</td>
-        <td>MCK 118</td>
-        <td>10:00AM - 10:50AM</td>
-        <td>2</td>
+            <td scope="row">Pacific Island Studies</td>
+            <td>105</td>
+            <td>INTRO TO PACIFIC</td>
+            <td>LIB 258</td>
+            <td>8:00AM - 8:50AM</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td>Math</td>
-        <td>107</td>
-        <td>QUANTITATIVE REASONING</td>
-        <td>Online</td>
-        <td>N/A</td>
-        <td>3</td>
+            <td>Education</td>
+            <td>212-02</td>
+            <td>FOUNDATIONS OF EDUCATION</td>
+            <td>MCK 118</td>
+            <td>10:00AM - 10:50AM</td>
+            <td>2</td>
         </tr>
         <tr>
-        <td rowspan="2">Computer Science</td>
-        <td>140</td>
-        <td>WEB DESIGN</td>
-        <td>Portable 2</td>
-        <td>11:00AM - 11:50AM</td>
-        <td>3</td>
+            <td>Math</td>
+            <td>107</td>
+            <td>QUANTITATIVE REASONING</td>
+            <td>Online</td>
+            <td>N/A</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td>999</td>
-        <td>ADVANCED NAPPING</td>
-        <td>Portable 2</td>
-        <td>11:00AM - 11:50AM</td>
-        <td>3</td>   
+            <td>Computer Science</td>
+            <td>140</td>
+            <td>WEB DESIGN</td>
+            <td>Portable 2</td>
+            <td>11:00AM - 11:50AM</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td>Religion</td>
-        <td>345</td>
-        <td>CHURCH HISTORY IN THE PACIFIC</td>
-        <td>STC CH2C</td>
-        <td>9:00AM - 9:50AM</td>
-        <td>2</td>
+            <td>Religion</td>
+            <td>345</td>
+            <td>CHURCH HISTORY IN THE PACIFIC</td>
+            <td>STC CH2C</td>
+            <td>9:00AM - 9:50AM</td>
+            <td>2</td>
         </tr>
         </tbody>
         <tr><th colspan="6">WINTER 2027</th></tr>
         <tbody>
         <tr>
-        <td>Pacific Island Studies</td>
-        <td>105</td>
-        <td>INTRO TO PACIFIC</td>
-        <td>LIB 258</td>
-        <td>8:00AM - 8:50AM</td>
-        <td>3</td>
+            <td>Pacific Island Studies</td>
+            <td>105</td>
+            <td>INTRO TO PACIFIC</td>
+            <td>LIB 258</td>
+            <td>8:00AM - 8:50AM</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td>Education</td>
-        <td>212-02</td>
-        <td>FOUNDATIONS OF EDUCATION</td>
-        <td>MCK 118</td>
-        <td>10:00AM - 10:50AM</td>
-        <td>2</td>
+            <td>Education</td>
+            <td>212-02</td>
+            <td>FOUNDATIONS OF EDUCATION</td>
+            <td>MCK 118</td>
+            <td>10:00AM - 10:50AM</td>
+            <td>2</td>
         </tr>
         <tr>
-        <td>Math</td>
-        <td>107</td>
-        <td>QUANTITATIVE REASONING</td>
-        <td>Online</td>
-        <td>N/A</td>
-        <td>3</td>
+            <td>Math</td>
+            <td>107</td>
+            <td>QUANTITATIVE REASONING</td>
+            <td>Online</td>
+            <td>N/A</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td rowspan="2">Computer Science</td>
-        <td>140</td>
-        <td>WEB DESIGN</td>
-        <td>Portable 2</td>
-        <td>11:00AM - 11:50AM</td>
-        <td>3</td>
+            <td>Computer Science</td>
+            <td>140</td>
+            <td>WEB DESIGN</td>
+            <td>Portable 2</td>
+            <td>11:00AM - 11:50AM</td>
+            <td>3</td>
         </tr>
         <tr>
-        <td>999</td>
-        <td>ADVANCED NAPPING</td>
-        <td>Portable 2</td>
-        <td>11:00AM - 11:50AM</td>
-        <td>3</td>   
-        </tr>
-        <tr>
-        <td>Religion</td>
-        <td>345</td>
-        <td>CHURCH HISTORY IN THE PACIFIC</td>
-        <td>STC CH2C</td>
-        <td>9:00AM - 9:50AM</td>
-        <td>2</td>
+            <td>Religion</td>
+            <td>345</td>
+            <td>CHURCH HISTORY IN THE PACIFIC</td>
+            <td>STC CH2C</td>
+            <td>9:00AM - 9:50AM</td>
+            <td>2</td>
         </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td>
-                Total Credits
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>14</td>
-            </tr>
+            <tr><th colspan="5">TOTAL CREDITS</th>
+            <td>16</td></tr>
         </tfoot>
     </table>
-    <main>
-        <p> I think when I started doing step 3, it began coming together and I was able to better understand the role of each tag.</p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Eden Ili</p>
