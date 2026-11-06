@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 212, 213);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(95, 93, 93);
+    
+}
+
+nav a {
+    color: aliceblue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(98, 98, 203);
+}
+
+
+.mainpage {
+    display: flex;
+}
+
+table {
+    width: 100%;
+}
+
+main {
+    width: 75%;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 10px;
+    text-align: right;
+}
+
+
+.tablediv {
+    overflow-x: auto;
+}
+
+#standings {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#standings th, #standings td {
+    border: 4px solid rgb(0, 0, 0);
+}
+
+caption {
+    caption-side: bottom;
+}
+
+#standings thead th {
+     background-color: rgb(7, 48, 130);
+     color: white;
+}
+
+ #standings tbody th {
+background-color: rgb(27, 87, 150); color: white; 
+ }
+
+#standings tbody tr:nth-child(even) {
+    background-color:rgb(228, 235, 243);
+}
+
+#standings tfoot tr td,tbody tr td:last-child {
+    text-align: right;
+}
