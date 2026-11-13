@@ -1,0 +1,78 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(219, 242, 250);
+}
+
+header {
+    font-style: italic;
+}
+header, footer {
+    color: rgb(161, 29, 29); font-family: 'Times New Roman', Times, serif; font-size: large;
+}
+
+legend {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+
+.form-row, .check-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+background-color: rgb(255, 253, 230);
+border: thick dotted rgb(70, 137, 44);
+box-shadow: 3px 3px 3px rgb(157, 180, 155);
+}
+
+.form-row select, textarea, input:not([type="submit"]) {
+    padding: 5px;
+    background-color: rgb(238, 253, 230);
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: rgb(255, 232, 243);
+    color: rgb(118, 42, 42);
+}
+
+.form-row input, select, textarea {
+    border: 1px solid rgb(118, 42, 42);
+    border-radius: 6px;
+}
+
+.check-row label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+@media ONLY screen AND (max-width: 500px)
+ {.form-row, .check-row {
+        flex-direction: column;}
+        
+        .form-row label {
+            text-align: left;
+        }
+
+        .spacer {
+            text-align: left;
+        }
+    
+        input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        }}

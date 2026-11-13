@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding RSVP</title>
+    <link rel="stylesheet" href="rsvp.css">
+</head>
+<body>
+    <header>
+        <h1>WEDDING RSVP</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <legend>GUEST INFORMATION</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name</label>
+                    <input type="text" id="personname" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="ed3nili@byuh.edu">
+                </div>
+                <div class="form-row">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" id="tel" value="+685 685 685">
+                </div>
+                <div class="form-row">
+                <label for="guests">Number of Guests</label>
+                <input type="number" name="guests" id="guests" min="1" max="10" placeholder="-------">
+                </div>
+                <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                </div>
+                <div class="form-row">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="blank">-------</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="WS">Samoa</option>
+                        <option value="USA">United States</option>
+                        <option value="AUS">Australia</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" value="agree" name="terms">I agree to the wedding RSVP details</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Wedding Confirmation</div>
+                    <label><input type="radio" name="rsvp" value="accept">Joyfully Accepts</label>
+                    <label><input type="radio" name="rsvp" value="decline">Regretfully Declines</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Dietary Requirements</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit RSVP">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+       <p> &copy; 2026 Eden Ili</p>
+    </footer>
+</body>
+</html>
