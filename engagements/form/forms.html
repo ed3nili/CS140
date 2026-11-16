@@ -11,12 +11,12 @@
         <h1>Eden's Web Design Page</h1>
     </header>
     <main>
-        <form action="formprocessing.html" method="post">
+        <form id="myForm" action="formprocessing.html" method="post">
             <fieldset>
                 <legend>Account</legend>
                 <div class="form-row">
-                    <label for="personname">Full Name</label>
-                    <input type="personname" type="text" name="fullname" placeholder="Full Name">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
@@ -59,12 +59,45 @@
                 </div>
             </fieldset>
         </form>
-        <p>Using CSS can help style the form. For example, colors, borders, fonts, even spacing using padding or margins can help style the form and make it more appealing.</p>
-        <p>Brother Slade likes using flex because it's alot simpler and it's easier to organise and align elements.</p>
-        <p>It's good to have a vertical layout for mobile forms.</p>
+        <p>JavaScript is a programming language used to make webpages or websites interactive but was originally called LiveScript. JavaScript is different to Java. JavaScript allows websites to respond to buttoms, submitting forms and displaying messages.</p>
+        <p>2 main ways are Client-side and Server-side. The client side works with the users web browser and allows the website to be interactive whereas the server side deals with the server using tools to process the data.</p>
+        <p>jQuery is a JavaScript library that makes it more simpler or easier to work with HTML elements.</p>
+        <p>React is one of the most popular front-end Javascript libraries today. </p>
+        <p>my code uses event.preventDefault() to stop the browers from submitting the form normally. Submittinf a form can cause the page to reload or navigate to another page. But preventing this allows JavaScript to check the ino submit.</p>
     </main>
     <footer>
        <p> &copy; 2026 Eden Ili</p>
     </footer>
+     <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const age = document.getElementById('bdate').value;
+
+        if (!fullname || !email) {
+            alert("You need a name and email.");
+            return;
+        }
+
+        if (!age) {
+            alert("You need to enter your birthday");
+            return;
+        }
+
+        const formData = {
+            name: fullname,
+            email: email,
+            password: password,
+            age: age
+        };
+
+        console.log(formData);
+
+        });
+    </script>
 </body>
 </html>
