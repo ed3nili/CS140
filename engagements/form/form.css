@@ -40,12 +40,10 @@ box-shadow: 3px 3px 3px rgb(225, 160, 189);
     color: black;
 }
 
-@media ONLY screen AND {max-width: 500px;}
- { 
-    .form-row, .check-row {
-        flex-direction: column;}
+@media ONLY screen AND (max-width: 500px)
+ {.form-row, .check-row 
+    {flex-direction: column;}
         
-        .form-row label {
-            text-align: left;
+        .form-row label {text-align: left;
         }
-}
+ }
